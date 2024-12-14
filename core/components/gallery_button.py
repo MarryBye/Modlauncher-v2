@@ -20,9 +20,19 @@ class GalleryButton(QWidget):
         
     def set_image(self, path):
         self._image = QPixmap(path)
-        # self._image = self._image.scaled(self.ui.logo.width(), self.ui.logo.height())
-        self.ui.image.setPixmap(self._image)
+        self.update_image()
+    
+    def update_image(self):
+        scaled_image = self._image.scaled(
+            self.ui.logo.width(),
+            self.ui.logo.height()
+        )
+        self.ui.image.setPixmap(scaled_image)
         
+    def resizeEvent(self, event):
+        self.update_image()
+        super().resizeEvent(event)
+    
     def show_buttons_section(self, event):
         
         startRect = self.ui.buttons.geometry()
