@@ -135,6 +135,9 @@
           </property>
           <item>
            <widget class="QPushButton" name="download">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="text">
              <string>Скачать</string>
             </property>
@@ -142,6 +145,9 @@
           </item>
           <item>
            <widget class="QPushButton" name="description">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="text">
              <string>Описание</string>
             </property>

@@ -18,6 +18,9 @@ class GalleryButton(QWidget):
         self.enterEvent = self.show_buttons_section
         self.leaveEvent = self.hide_buttons_section
         
+        style = open("./resources/styles/gallery_button.qss").read()
+        self.setStyleSheet(style)
+        
     def set_image(self, path):
         self._image = QPixmap(path)
         self.update_image()

@@ -84,11 +84,13 @@ class Ui_gallery_button(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.download = QPushButton(self.buttons)
         self.download.setObjectName(u"download")
+        self.download.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
 
         self.verticalLayout.addWidget(self.download)
 
         self.description = QPushButton(self.buttons)
         self.description.setObjectName(u"description")
+        self.description.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
 
         self.verticalLayout.addWidget(self.description)
 
