@@ -1,0 +1,69 @@
+* {
+    font-family: "%s";
+}
+
+QMainWindow {
+    background-color: rgb(30, 30, 30);
+    border-radius: none;
+}
+
+#title {
+    padding-left: 8px;
+    border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+#info_panel {
+    border-top: 1px solid rgb(50, 50, 50);
+}
+
+#navbar {
+    border-right: 1px solid rgb(50, 50, 50);
+}
+
+#navbar QPushButton {
+    text-align: left;
+}
+
+#content {
+    border-right: 1px solid rgb(50, 50, 50);
+}
+
+#info_panel, #title, #navbar {
+    background-color: rgb(20, 20, 20);
+}
+
+#title QPushButton, #info_panel QPushButton, #navbar QPushButton {
+    width: 16px;
+    height: 16px;
+    background-color: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: none;
+    padding: 8px;
+}
+
+#navbar QPushButton {
+    width: 32px;
+    height: 32px;
+}
+
+#info_panel #author {
+    width: 64px;
+    background-color: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: none;
+    padding: 8px;
+}
+
+#title QPushButton:hover, #info_panel #author:hover, #navbar QPushButton:hover {
+    background-color: rgb(76, 76, 76);
+}
+
+#title QPushButton:pressed, #info_panel #author:pressed, #navbar QPushButton:pressed {
+    background-color: rgb(125, 125, 125);
+}
+
+#navbar {
+    padding: 8px;
+}
